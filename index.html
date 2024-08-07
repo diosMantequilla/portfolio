@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- aqui va la primera seccion -->
+        <div class="section">
+            <div class="subsection">
+                <!-- esta es la seccion de la derecha -->
+                <h1>Yagel Salazar Reyes</h1>
+                <p>Web Developer</p>
+                <div class="status">
+                    <p class="p-status">Available for work</p>
+                    <div class="circle"></div>
+                </div>
+                <img class="perfil" src="./img/perfil.jpg" alt="Yagel Dev">
+            </div>
+            <div class="subsection">
+                <p class="present">Hello! I'm Matt, an Expert Motion Design Specialist bringing ideas to life with
+                    innovation, creativity, and precision.</p>
+                <div>
+                    <button class="btn-black">Work</button>
+                    <button class="btn-lined">CV DOWNLOAD</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- aqui va la segnda seccion -->
+        <div class="section logos-section">
+            <!-- aqui va e codigo de la segunda seccion -->
+            <img class="item" src="./img/icon.png" alt="icono">
+            <img class="item" src="./img/icon.png" alt="icono">
+            <img class="item" src="./img/icon.png" alt="icono">
+            <img class="item" src="./img/icon.png" alt="icono">
+            <img class="item" src="./img/icon.png" alt="icono">
+            <img class="item" src="./img/icon.png" alt="icono">
+            <img class="item" src="./img/icon.png" alt="icono">
+            <img class="item" src="./img/icon.png" alt="icono">
+        </div>
+
+        <!-- aqui va la seccion de contacto -->
+        <div class="section">
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Nombre</label>
+                    <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                    <label for="email_id">Correo</label>
+                    <input type="text" name="email_id" id="email_id">
+                </div>
+                <div class="field">
+                    <label for="message">Mensaje</label>
+                    <input type="text" name="message" id="message">
+                </div>
+
+                <input type="submit" id="button" value="Send Email">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- aqui va el codigo de emailJS -->
+    <script src="./emailjs.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('kMaaoLYRjTiW_AD6a')
+    </script>
+</body>
+
+</html>
